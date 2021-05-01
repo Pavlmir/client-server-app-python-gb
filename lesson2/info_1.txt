@@ -1,0 +1,4 @@
+Название ОС:                      Microsoft Windows 7 Профессиональная
+Изготовитель системы:             Microsoft Corporation
+Код продукта:                     XXXXX-OEM-XXXXXXX-12345
+Тип системы:                      x64-based PC

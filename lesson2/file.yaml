@@ -1,0 +1,9 @@
+first_key:
+- list
+- of
+- keys
+second_key: 67
+third_key:
+  inner_key1: 33Ѱ
+  inner_key3: 17€
+  inner_key8: 21※

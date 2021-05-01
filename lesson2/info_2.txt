@@ -1,0 +1,4 @@
+Название ОС:                      Microsoft Windows 10 Home
+Изготовитель системы:             Microsoft Corporation
+Код продукта:                     XXXXX-OEM-XXXXXXX-12347
+Тип системы:                      x32-based PC
