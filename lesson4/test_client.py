@@ -10,7 +10,7 @@ class TestCreateMessage(unittest.TestCase):
 
     def testAccountNameLen(self):
         with self.assertRaises(ValueError):
-            create_presence_message('Petrov')
+            create_presence_message('Petrov1234567890123456789123')
 
     def testAccountNameType(self):
         with self.assertRaises(TypeError):

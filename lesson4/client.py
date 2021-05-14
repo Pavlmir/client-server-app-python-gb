@@ -21,6 +21,12 @@ from config import *
 
 
 def create_presence_message(account_name='Guest'):
+    if len(account_name) > 25:
+        raise ValueError
+
+    if not isinstance(account_name, str):
+        raise TypeError
+
     message = {
         ACTION: PRESENCE,
         TIME: time.time(),
@@ -52,7 +58,10 @@ def start_client():
     # Преобразование строки JSON в объекты Python
     server_response = json.loads(s.recv(1024).decode('utf-8'))
     print('Ответ:', server_response)
-    if server_response.get('response') == 200:
+    if server_response.get('response') not in StandartServerCodes:
+        s.close()
+        raise UnknownCode(server_response.get('response'))
+    if server_response.get('response') == OK:
         print('Сервер нас понимает!')
     else:
         print('Что-то пошло не так..')
