@@ -1,0 +1,65 @@
+2021-05-15 11:09:26,804 - INFO - client: start_client - Запуск клиента 
+2021-05-15 11:09:26,812 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 11:09:26,813 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": 1621066166.812132, "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 11:09:26,813 - INFO - client: start_client - жду ответа 
+2021-05-15 11:09:26,822 - INFO - client: start_client - Ответ: 
+2021-05-15 11:09:26,822 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-15 11:09:43,200 - INFO - client: start_client - Запуск клиента 
+2021-05-15 11:10:03,316 - INFO - client: start_client - Запуск клиента 
+2021-05-15 11:10:03,322 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 11:10:03,323 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": 1621066203.3236194, "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 11:10:03,323 - INFO - client: start_client - жду ответа 
+2021-05-15 11:10:03,325 - INFO - client: start_client - Ответ: 
+2021-05-15 11:10:03,325 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-15 11:10:35,421 - INFO - client: start_client - Запуск клиента 
+2021-05-15 11:10:35,428 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 11:10:35,428 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": 1621066235.4287322, "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 11:10:35,428 - INFO - client: start_client - жду ответа 
+2021-05-15 11:10:35,431 - INFO - client: start_client - Ответ: 
+2021-05-15 11:10:35,431 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-15 18:13:23,080 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:13:23,089 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 18:13:23,091 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": 1621091603.0899324, "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 18:13:23,091 - INFO - client: start_client - жду ответа 
+2021-05-15 18:13:23,093 - INFO - client: start_client - Ответ: 
+2021-05-15 18:13:23,094 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-15 18:15:16,166 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:15:16,172 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 18:15:16,172 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": 1621091716.1723917, "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 18:15:16,172 - INFO - client: start_client - жду ответа 
+2021-05-15 18:15:16,175 - INFO - client: start_client - Ответ: 
+2021-05-15 18:15:16,175 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-15 18:15:19,374 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:15:19,383 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 18:17:40,049 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:17:52,990 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:18:36,745 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:18:36,753 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 18:27:05,986 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:27:05,994 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 18:27:05,994 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": "2021-05-15-18.27.05", "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 18:27:05,994 - INFO - client: start_client - жду ответа 
+2021-05-15 18:27:05,996 - INFO - client: start_client - Ответ: 
+2021-05-15 18:27:05,996 - ERROR - client: start_client - Что-то пошло не так.. 
+2021-05-15 18:28:03,406 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:28:03,411 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 18:28:03,413 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": "2021-05-15-18.28.03", "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 18:28:03,413 - INFO - client: start_client - жду ответа 
+2021-05-15 18:28:03,415 - INFO - client: start_client - Ответ: 
+2021-05-15 18:29:00,420 - ERROR - client: start_client - Что-то пошло не так.. 
+2021-05-15 18:29:06,066 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:29:06,072 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 18:29:06,073 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": "2021-05-15-18.29.06", "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 18:29:06,074 - INFO - client: start_client - жду ответа 
+2021-05-15 18:29:06,075 - INFO - client: start_client - Ответ: 
+2021-05-15 18:29:06,076 - ERROR - client: start_client - Что-то пошло не так.. 
+2021-05-15 18:29:21,041 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:29:21,047 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 18:29:21,049 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": "2021-05-15-18.29.21", "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 18:29:21,049 - INFO - client: start_client - жду ответа 
+2021-05-15 18:31:31,277 - INFO - client: start_client - Запуск клиента 
+2021-05-15 18:31:31,283 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-15 18:31:31,284 - INFO - client: start_client - Отправляю сообщение "{"action": "presence", "time": "2021-05-15-18.31.31", "user": {"account_name": "Guest"}}" на сервер 
+2021-05-15 18:31:31,284 - INFO - client: start_client - жду ответа 
+2021-05-15 18:31:31,292 - INFO - client: start_client - Ответ: 
+2021-05-15 18:31:31,293 - INFO - client: start_client - Сервер нас понимает! 
