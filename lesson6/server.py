@@ -12,6 +12,7 @@ b. сервер отвечает соответствующим кодом ре�
 -p <port> — TCP-порт для работы (по умолчанию использует 7777);
 -a <addr> — IP-адрес для прослушивания (по умолчанию слушает все доступные адреса).
 """
+import argparse
 import logging
 import sys
 import json
@@ -62,12 +63,13 @@ def start_server():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        for i in range(1, len(sys.argv)):
-            if sys.argv[i] == '-p' and i + 1 < len(sys.argv):
-                server_port = sys.argv[i + 1]
-            if sys.argv[i] == '-a' and i + 1 < len(sys.argv):
-                server_address = sys.argv[i + 1]
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-p', '--port', type=int, help='Port server', default=server_port)
+    parser.add_argument('-a', '--address', type=str, help='Address server', default=server_address)
+    args = parser.parse_args()
+
+    server_port = args.port
+    server_address = args.address
 
     # Показывать лог в консоль при запуске сервера напрямую
     server_stream_handler = logging.StreamHandler(sys.stdout)
