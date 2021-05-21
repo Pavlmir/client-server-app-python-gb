@@ -14,8 +14,8 @@ b. сервер отвечает соответствующим кодом ре�
 """
 import argparse
 import logging
+import pickle
 import sys
-import json
 from config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, ERROR, server_port, server_address
 import socket
 import logs.config.server_config_log
@@ -43,18 +43,19 @@ def start_server():
     while True:
         client, address = sock.accept()  # начинаем принимать соединения
         log.info('соединение:', address)  # выводим информацию о подключении
-        data = client.recv(1024)  # принимаем данные от клиента, по 1024 байт
-        # Раскодирование байтстроки в строку, используя кодировку utf-8
+        data_bytes = client.recv(1024)  # принимаем данные от клиента, по 1024 байт
+
         # Преобразование строки JSON в объекты Python
-        client_message = json.loads(data.decode("utf-8"))
+        client_message = pickle.loads(data_bytes)
+
         log.info(f'Принято сообщение от клиента: {client_message}')
         answer = check_correct_presence_and_response(client_message)
         log.info(f"Приветствуем пользователя {client_message.get('user').get('account_name')}!")
         log.info('Отправка ответа клиенту:', answer)
 
         # Преобразование объекта Python в строку JSON
-        # Кодируем строку в байты, используя кодировку utf-8
-        client.send(json.dumps(answer).encode('utf-8'))
+        data_bytes = pickle.dumps(answer)
+        client.send(data_bytes)
     client.close()  # закрываем соединение
 
 

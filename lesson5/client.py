@@ -13,14 +13,15 @@ b. сервер отвечает соответствующим кодом ре�
 6. Addr — ip-адрес сервера;
 7. Port — tcp-порт на сервере, по умолчанию 7777.
 """
-import sys
-import json
+
 import logging
 from datetime import datetime
-
+import pickle
+import argparse
 import logs.config.client_config_log
-from socket import *
-from config import *
+import socket
+from config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
+    OK, server_port, server_address, StandartServerCodes, UnknownCode
 
 log = logging.getLogger('Client_log')
 
@@ -47,7 +48,7 @@ def create_presence_message(account_name='Guest'):
 
 def start_client():
     log.info('Запуск клиента')
-    s = socket(AF_INET, SOCK_STREAM)
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     if server_address != '0.0.0.0':
         s.connect((server_address, server_port))
     else:
@@ -55,17 +56,15 @@ def start_client():
 
     message = create_presence_message()
     if isinstance(message, dict):
-        # Преобразование объекта Python в строку JSON
-        message = json.dumps(message)
+        data_string = pickle.dumps(message)
+
     log.info(f'Отправляю сообщение "{message}" на сервер')
 
-    # Кодируем строку в байты, используя кодировку utf-8
-    s.send(message.encode('utf-8'))
+    s.send(data_string)
     log.info('жду ответа')
 
-    # Раскодирование байтстроки в строку, используя кодировку utf-8
-    # Преобразование строки JSON в объекты Python
-    server_response = json.loads(s.recv(1024).decode('utf-8'))
+    data_bytes = s.recv(1024)
+    server_response = pickle.loads(data_bytes)
     log.info('Ответ:', server_response)
     if server_response.get('response') not in StandartServerCodes:
         log.error(f'Неизвестный код ответа от сервера: {server_response.get("response")}')
@@ -79,12 +78,12 @@ def start_client():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        server_address = sys.argv[1]
-    if len(sys.argv) > 2:
-        try:
-            server_port = int(sys.argv[2])
-        except ValueError:
-            log.error('Переданный номер порта для соединения с сервером не целое число')
-            'Порт должен быть целым числом!'
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-p', '--port', type=int, help='Port server', default=server_port)
+    parser.add_argument('-a', '--address', type=str, help='Address server', default=server_address)
+    args = parser.parse_args()
+
+    server_port = args.port
+    server_address = args.address
+
     start_client()
