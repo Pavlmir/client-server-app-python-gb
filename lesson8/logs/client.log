@@ -1,0 +1,90 @@
+2021-05-22 14:20:08,675 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:20:08,681 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:20:08,684 - INFO - decorators: deco_log_call - Sat May 22 14:20:08 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции main() 
+2021-05-22 14:20:08,685 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.20.08', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-22 14:20:08,685 - INFO - client: start_client - жду ответа 
+2021-05-22 14:20:08,691 - INFO - client: start_client - Ответ: 
+2021-05-22 14:20:08,692 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-22 14:20:08,693 - INFO - decorators: deco_log_call - Sat May 22 14:20:08 2021 Вызван декоратор Log для start_client с параметрами ('Guest',) из функции main() 
+2021-05-22 14:22:47,169 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:22:47,184 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:22:47,194 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для create_presence_message с параметрами ('User4',) из функции main() 
+2021-05-22 14:22:47,194 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.22.47', 'user': {'account_name': 'User4'}}" на сервер 
+2021-05-22 14:22:47,195 - INFO - client: start_client - жду ответа 
+2021-05-22 14:22:47,235 - INFO - client: start_client - Ответ: 
+2021-05-22 14:22:47,236 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-22 14:22:47,241 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для start_client с параметрами ('User4',) из функции main() 
+2021-05-22 14:22:47,481 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:22:47,508 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:22:47,573 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:22:47,581 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:22:47,586 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для create_presence_message с параметрами ('User1',) из функции main() 
+2021-05-22 14:22:47,586 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.22.47', 'user': {'account_name': 'User1'}}" на сервер 
+2021-05-22 14:22:47,586 - INFO - client: start_client - жду ответа 
+2021-05-22 14:22:47,608 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:22:47,624 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для create_presence_message с параметрами ('User2',) из функции main() 
+2021-05-22 14:22:47,626 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.22.47', 'user': {'account_name': 'User2'}}" на сервер 
+2021-05-22 14:22:47,626 - INFO - client: start_client - жду ответа 
+2021-05-22 14:22:47,643 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:22:47,664 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:22:47,670 - INFO - client: start_client - Ответ: 
+2021-05-22 14:22:47,672 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-22 14:22:47,673 - INFO - client: start_client - Ответ: 
+2021-05-22 14:22:47,674 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-22 14:22:47,687 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:22:47,699 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для start_client с параметрами ('User1',) из функции main() 
+2021-05-22 14:22:47,722 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для start_client с параметрами ('User2',) из функции main() 
+2021-05-22 14:22:47,746 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для create_presence_message с параметрами ('User3',) из функции main() 
+2021-05-22 14:22:47,746 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.22.47', 'user': {'account_name': 'User3'}}" на сервер 
+2021-05-22 14:22:47,747 - INFO - client: start_client - жду ответа 
+2021-05-22 14:22:47,748 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для create_presence_message с параметрами ('User8',) из функции main() 
+2021-05-22 14:22:47,748 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.22.47', 'user': {'account_name': 'User8'}}" на сервер 
+2021-05-22 14:22:47,748 - INFO - client: start_client - жду ответа 
+2021-05-22 14:22:47,750 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:22:47,758 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:22:47,766 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для create_presence_message с параметрами ('User5',) из функции main() 
+2021-05-22 14:22:47,767 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.22.47', 'user': {'account_name': 'User5'}}" на сервер 
+2021-05-22 14:22:47,767 - INFO - client: start_client - жду ответа 
+2021-05-22 14:22:47,771 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:22:47,783 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:22:47,795 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:22:47,798 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для create_presence_message с параметрами ('User6',) из функции main() 
+2021-05-22 14:22:47,800 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.22.47', 'user': {'account_name': 'User6'}}" на сервер 
+2021-05-22 14:22:47,801 - INFO - client: start_client - жду ответа 
+2021-05-22 14:22:47,804 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:22:47,813 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для create_presence_message с параметрами ('User7',) из функции main() 
+2021-05-22 14:22:47,812 - INFO - client: start_client - Ответ: 
+2021-05-22 14:22:47,815 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-22 14:22:47,815 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.22.47', 'user': {'account_name': 'User7'}}" на сервер 
+2021-05-22 14:22:47,816 - INFO - client: start_client - жду ответа 
+2021-05-22 14:22:47,818 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для start_client с параметрами ('User3',) из функции main() 
+2021-05-22 14:22:47,818 - INFO - client: start_client - Ответ: 
+2021-05-22 14:22:47,820 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-22 14:22:47,822 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для start_client с параметрами ('User8',) из функции main() 
+2021-05-22 14:22:47,823 - INFO - client: start_client - Ответ: 
+2021-05-22 14:22:47,825 - INFO - client: start_client - Сервер нас понимает! 
+2021-05-22 14:22:47,828 - INFO - decorators: deco_log_call - Sat May 22 14:22:47 2021 Вызван декоратор Log для start_client с параметрами ('User5',) из функции main() 
+2021-05-22 14:23:07,644 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:23:07,653 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:23:07,728 - INFO - decorators: deco_log_call - Sat May 22 14:23:07 2021 Вызван декоратор Log для create_presence_message с параметрами ('User3',) из функции main() 
+2021-05-22 14:23:07,728 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.23.07', 'user': {'account_name': 'User3'}}" на сервер 
+2021-05-22 14:23:07,729 - INFO - client: start_client - жду ответа 
+2021-05-22 14:23:08,191 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:23:08,200 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:23:08,208 - INFO - decorators: deco_log_call - Sat May 22 14:23:08 2021 Вызван декоратор Log для create_presence_message с параметрами ('User2',) из функции main() 
+2021-05-22 14:23:08,209 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.23.08', 'user': {'account_name': 'User2'}}" на сервер 
+2021-05-22 14:23:08,209 - INFO - client: start_client - жду ответа 
+2021-05-22 14:23:08,412 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:23:08,423 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:23:08,429 - INFO - decorators: deco_log_call - Sat May 22 14:23:08 2021 Вызван декоратор Log для create_presence_message с параметрами ('User1',) из функции main() 
+2021-05-22 14:23:08,430 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.23.08', 'user': {'account_name': 'User1'}}" на сервер 
+2021-05-22 14:23:08,430 - INFO - client: start_client - жду ответа 
+2021-05-22 14:23:08,452 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:23:08,486 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-22 14:23:08,498 - INFO - decorators: deco_log_call - Sat May 22 14:23:08 2021 Вызван декоратор Log для create_presence_message с параметрами ('User6',) из функции main() 
+2021-05-22 14:23:08,498 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-22-14.23.08', 'user': {'account_name': 'User6'}}" на сервер 
+2021-05-22 14:23:08,499 - INFO - client: start_client - жду ответа 
+2021-05-22 14:23:08,531 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:23:08,631 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:23:08,732 - INFO - client: start_client - Запуск клиента 
+2021-05-22 14:23:08,753 - INFO - client: start_client - Запуск клиента 
