@@ -10,6 +10,14 @@ ACCOUNT_NAME = 'account_name'
 RESPONSE = 'response'
 ERROR = 'error'
 PRESENCE = 'presence'
+MAIN_CHANNEL = '#all'
+SERVER = 'server'
+MSG = 'msg'
+TO = 'to'
+FROM = 'from'
+MESSAGE = 'message'
+alive = True
+SHUTDOWN = 0 #Выключение сервера
 
 BASIC_NOTICE = 100
 OK = 200

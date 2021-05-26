@@ -16,7 +16,8 @@ import logging
 import select
 import sys
 from config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
-    ERROR, server_port, server_address, MAX_CONNECTIONS
+    ERROR, server_port, server_address, MAX_CONNECTIONS, FROM, SHUTDOWN, \
+    MSG, TO, MESSAGE, SERVER, MAIN_CHANNEL
 import socket
 import decorators
 import logs.config.server_config_log
@@ -41,64 +42,139 @@ def check_correct_presence_and_response(presence_message):
 
 @logger
 def start_server():
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # создаем сокет
-    sock.bind((server_address, server_port))  # связываем сокет с портом, где он будет ожидать сообщения
-    sock.settimeout(0.5)
+    alive = True
+    global clients, names
+    clients = []
+    names = dict()
 
-    clients = []  # список клиентов
-    messages = []  # очередь сообщений
+    # создаем сокет для работы с клиентами
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:  # создаем сокет
+        if not isinstance(server_address, str) or not isinstance(server_port, int):
+            log.error('Полученный адрес сервера или порт не является строкой или числом!')
+            raise ValueError
 
-    sock.listen(MAX_CONNECTIONS)  # указываем сколько может сокет принимать соединений
-    log.info('Готов к приему клиентов! \n')
+        sock.bind((server_address, server_port))  # связываем сокет с портом, где он будет ожидать сообщения
+        sock.listen(1)
+        sock.settimeout(0.1)
 
-    while True:
-        # Ждём подключения, если таймаут вышел, ловим исключение.
+        log.info('Запуск сервера! Готов к приему клиентов! \n')
+
+        while alive:
+            try:
+                # Прием запросов на подключение, проверка приветственного сообщения и ответ
+                client, address = sock.accept()
+                data_bytes = client.recv(1024)  # принимаем данные от клиента, по 1024 байт
+                client_message = pickle.loads(data_bytes)  # Преобразование строки JSON в объекты Python
+                log.info(f'Принято сообщение от клиента: {client_message}')
+                answer = check_correct_presence_and_response(client_message)
+                client_name = client_message.get('user').get('account_name')
+                log.info(f"Приветствуем пользователя {client_name}!")
+                log.info(f'Отправка ответа клиенту: {answer}')
+                data_bytes = pickle.dumps(answer)  # Преобразование объекта Python в строку JSON
+                client.send(data_bytes)
+            except OSError as e:
+                # за время socket timeout не было подключений
+                pass
+            else:
+                log.info(f'Получен запрос на соединение от {str(address)}')
+                names[client_name] = client
+                clients.append(client)
+            finally:
+                r = []
+                w = []
+                e = []
+                select_timeout = 0
+            try:
+                r, w, e = select.select(clients, clients, e, select_timeout)
+            except:
+                # исключение в случае дисконнекта любого из клиентов
+                pass
+
+            req = read_messages(r, clients)
+            if req == {RESPONSE: SHUTDOWN}:
+                alive = False
+                log.info(f'Завершение работы сервера по команде от Admin')
+            write_messages(req, w, clients)
+
+
+# Функция чтения сообщений с сокетов клиентов
+def read_messages(from_clients, client_list):
+    # log.debug('Запуск функции получения сообщений от клиентов')
+    global names
+    # список всех полученных сообщений
+    message_list = []
+    for connection in from_clients:
         try:
-            client, address = sock.accept()  # начинаем принимать соединения
-        except OSError:
-            pass
-        else:
-            log.info('соединение:', address)  # выводим информацию о подключении
-            clients.append(client)
+            data_bytes = connection.recv(1024)  # принимаем данные от клиента, по 1024 байт
+            client_message = pickle.loads(data_bytes)  # Преобразование строки JSON в объекты Python
+            log.info(f'Принято сообщение от клиента: {client_message[FROM]}')
+            log.debug(f'{client_message}')
+            # Если спец сообщение от Admin, то вырубаем сервер
+            if ACTION in client_message and \
+                    client_message[ACTION] == 'Stop server' and \
+                    client_message[FROM] == 'Admin':
+                log.info(f'Получена команда выключения сервера, ответ: {RESPONSE}: {SHUTDOWN}')
+                return {RESPONSE: SHUTDOWN}
+            message_list.append((client_message, connection))
+        except:
+            log.debug(
+                f'Клиент {connection.fileno()} {connection.getpeername()} отключился до передачи сообщения по таймауту ')
+            names = {key: val for key, val in names.items() if val != connection}
+            client_list.remove(connection)
+    return message_list
 
-        recv_data_lst = []
-        send_data_lst = []
-        err_lst = []
-        # Проверяем на наличие ждущих клиентов
-        try:
-            if clients:
-                recv_data_lst, send_data_lst, err_lst = select.select(clients, clients, [], 0)
-        except OSError:
-            pass
 
-        # принимаем сообщения и если там есть сообщения,
-        # кладём в словарь, если ошибка, исключаем клиента.
-        if recv_data_lst:
-            for client_with_message in recv_data_lst:
+# Функция записи сообщений в сокеты клиентов
+def write_messages(messages, to_clients, client_list):
+    global names
+    # log.debug('Запуск функции отправки сообщений клиентам')
+
+    for message, sender in messages:
+        # Если приватный канал, то отправка только одному получателю
+        if message[ACTION] == MSG and message[TO] != MAIN_CHANNEL and message[TO] != message[FROM]:
+            # получаем пользователя, которому отправляем сообщение
+            to = message[TO]
+            # обработка сервером команды who
+            if message[MESSAGE] != 'who':
+                message[MESSAGE] = f'(private){message[FROM]}:> {message[MESSAGE]}'
+            try:
+                connection = names[to]
+            except:
+                connection = names[message[FROM]]
+                if message[TO] == SERVER and message[MESSAGE] == 'who':
+                    message[TO] = message[FROM]
+                    client_names = [key for key in names.keys()]
+                    message[MESSAGE] = f'<:SERVER:> Список клиентов в онлайн: {client_names}'
+                    log.debug(f'Пользователем {message[FROM]} запрошен список пользователей онлайн: {message[MESSAGE]}')
+                else:
+                    message[TO] = message[FROM]
+                    message[FROM] = SERVER
+                    message[MESSAGE] = f'<:SERVER:> Клиент {to} не подключен. Отправка сообщения не возможна!'
+                    log.warning(message)
+            # отправка сообщения
+            try:
+                data_bytes = pickle.dumps(message)  # Преобразование объекта Python в строку JSON
+                connection.send(data_bytes)
+            except:
+                log.warning(f'Сокет клиента {connection.fileno()} {connection.getpeername()} '
+                            f'недоступен для отправки. Вероятно он отключился')
+                names = {key: val for key, val in names.items() if val != connection}
+                connection.close()
+                client_list.remove(connection)
+        # если общий канал, то отправка сообщения всем клиентам
+        elif message[ACTION] == MSG and message[TO] == MAIN_CHANNEL:
+            message[MESSAGE] = f'{message[FROM]}:> {message[MESSAGE]}'
+            for connection in to_clients:
+                # отправка сообщения
                 try:
-                    data_bytes = client_with_message.recv(1024)  # принимаем данные от клиента, по 1024 байт
-                    client_message = pickle.loads(data_bytes)  # Преобразование строки JSON в объекты Python
-                    log.info(f'Принято сообщение от клиента: {client_message}')
-                    answer = check_correct_presence_and_response(client_message)
-                    messages.append(answer)
-                    log.info(f"Приветствуем пользователя {client_message.get('user').get('account_name')}!")
+                    data_bytes = pickle.dumps(message)  # Преобразование объекта Python в строку JSON
+                    connection.send(data_bytes)
                 except:
-                    log.info(f"Клиент {client_message.get('user').get('account_name')} отключился от сервера.")
-                    clients.remove(client_with_message)
-
-        # Если есть сообщения для отправки и ожидающие клиенты, отправляем им сообщение.
-        if messages and send_data_lst:
-            for waiting_client in send_data_lst:
-                for answer in messages:
-                    try:
-                        log.info('Отправка ответа клиенту:', answer)
-                        data_bytes = pickle.dumps(answer)  # Преобразование объекта Python в строку JSON
-                        waiting_client.send(data_bytes)
-                    except:
-                        log.info(f'Клиент {waiting_client.getpeername()} отключился от сервера.')
-                        clients.remove(waiting_client)
-            # после отправки всех сообщений очищаем список сообщений
-            messages = []
+                    log.warning(f'Сокет клиента {connection.fileno()} {connection.getpeername()}'
+                                f' недоступен для отправки. Вероятно он отключился')
+                    names = {key: val for key, val in names.items() if val != connection}
+                    connection.close()
+                    client_list.remove(connection)
 
 
 if __name__ == "__main__":
