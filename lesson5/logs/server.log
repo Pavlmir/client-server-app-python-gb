@@ -1,0 +1,54 @@
+2021-05-15 11:08:29,731 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-15 11:09:26,821 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': 1621066166.812132, 'user': {'account_name': 'Guest'}} 
+2021-05-15 11:09:26,821 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 11:09:26,821 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-15 11:09:26,821 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-15 11:09:58,762 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-15 11:10:03,325 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': 1621066203.3236194, 'user': {'account_name': 'Guest'}} 
+2021-05-15 11:10:03,325 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 11:10:03,325 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-15 11:10:03,325 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-15 11:10:25,665 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-15 11:10:35,430 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': 1621066235.4287322, 'user': {'account_name': 'Guest'}} 
+2021-05-15 11:10:35,431 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 11:10:35,431 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-15 11:10:35,431 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-15 18:12:26,629 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-15 18:13:23,092 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': 1621091603.0899324, 'user': {'account_name': 'Guest'}} 
+2021-05-15 18:13:23,093 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 18:13:23,093 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-15 18:13:23,093 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-15 18:15:16,174 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': 1621091716.1723917, 'user': {'account_name': 'Guest'}} 
+2021-05-15 18:15:16,174 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 18:15:16,174 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-15 18:15:16,174 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-15 18:18:30,499 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-15 18:27:00,402 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-15 18:27:05,996 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-15-18.27.05', 'user': {'account_name': 'Guest'}} 
+2021-05-15 18:27:05,996 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 18:27:05,996 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-15 18:27:05,996 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-15 18:28:03,413 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-15-18.28.03', 'user': {'account_name': 'Guest'}} 
+2021-05-15 18:28:03,414 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 18:28:03,414 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-15 18:28:03,414 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-15 18:29:06,074 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-15-18.29.06', 'user': {'account_name': 'Guest'}} 
+2021-05-15 18:29:06,074 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 18:29:06,074 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-15 18:29:06,074 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-15 18:29:17,176 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-15 18:29:21,056 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-15-18.29.21', 'user': {'account_name': 'Guest'}} 
+2021-05-15 18:29:21,057 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 18:31:26,138 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-15 18:31:31,290 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-15-18.31.31', 'user': {'account_name': 'Guest'}} 
+2021-05-15 18:31:31,290 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-15 18:31:31,291 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-15 18:31:31,291 - INFO - server: start_server - Отправка ответа клиенту: 
