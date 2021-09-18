@@ -1,0 +1,111 @@
+2021-05-26 19:30:13,705 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:30:13,716 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:30:13,718 - INFO - decorators: deco_log_call - Wed May 26 19:30:13 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции start_client(user_name) 
+2021-05-26 19:30:13,719 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.30.13', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:30:13,719 - INFO - client: start_client - жду ответа 
+2021-05-26 19:30:13,726 - INFO - client: start_client - Ответ: 
+2021-05-26 19:30:13,726 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 19:31:21,946 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:31:21,955 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:31:21,956 - INFO - decorators: deco_log_call - Wed May 26 19:31:21 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции start_client(user_name) 
+2021-05-26 19:31:21,956 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.31.21', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:31:21,957 - INFO - client: start_client - жду ответа 
+2021-05-26 19:31:22,466 - INFO - client: start_client - Ответ: 
+2021-05-26 19:31:22,466 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 19:33:34,458 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:33:34,469 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:33:34,471 - INFO - decorators: deco_log_call - Wed May 26 19:33:34 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции start_client(user_name) 
+2021-05-26 19:33:34,471 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.33.34', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:33:34,471 - INFO - client: start_client - жду ответа 
+2021-05-26 19:33:34,979 - INFO - client: start_client - Ответ: 
+2021-05-26 19:33:34,979 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 19:33:44,617 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': 1622046824.6177766, 'to': '#all', 'from': 'Guest', 'message': 'привет'} 
+2021-05-26 19:33:45,116 - ERROR - client: client_reader - Reader: Сервер разорвал соединение или получен некорректный ответ! 
+2021-05-26 19:34:45,438 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:34:45,444 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:34:45,445 - INFO - decorators: deco_log_call - Wed May 26 19:34:45 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции start_client(user_name) 
+2021-05-26 19:34:45,445 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.34.45', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:34:45,445 - INFO - client: start_client - жду ответа 
+2021-05-26 19:34:45,447 - INFO - client: start_client - Ответ: 
+2021-05-26 19:34:45,447 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 19:34:48,933 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': 1622046888.9336717, 'to': '#all', 'from': 'Guest', 'message': 'Привет'} 
+2021-05-26 19:34:48,993 - INFO - client: client_reader - Получено сообщение с сервера: {'response': 400, 'error': 'Не верный запрос'} 
+2021-05-26 19:34:48,993 - ERROR - client: client_reader - Reader: Сервер разорвал соединение или получен некорректный ответ! 
+2021-05-26 19:37:45,195 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:37:45,200 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:37:45,202 - INFO - decorators: deco_log_call - Wed May 26 19:37:45 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции start_client(user_name) 
+2021-05-26 19:37:45,202 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.37.45', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:37:45,202 - INFO - client: start_client - жду ответа 
+2021-05-26 19:37:45,204 - INFO - client: start_client - Ответ: 
+2021-05-26 19:37:45,204 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 19:37:49,487 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': '2021-05-26-19.37.49', 'to': '#all', 'from': 'Guest', 'message': 'Привет'} 
+2021-05-26 19:37:49,758 - INFO - client: client_reader - Получено сообщение с сервера: {'response': 400, 'error': 'Не верный запрос'} 
+2021-05-26 19:37:49,758 - ERROR - client: client_reader - Reader: Сервер разорвал соединение или получен некорректный ответ! 
+2021-05-26 19:40:08,132 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:40:08,141 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:40:08,143 - INFO - decorators: deco_log_call - Wed May 26 19:40:08 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции mode) 
+2021-05-26 19:40:08,143 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.40.08', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:40:08,143 - INFO - client: start_client - жду ответа 
+2021-05-26 19:40:08,147 - INFO - client: start_client - Ответ: 
+2021-05-26 19:40:08,147 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 19:40:10,237 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': '2021-05-26-19.40.10', 'to': '#all', 'from': 'Guest', 'message': 'лорнмидом'} 
+2021-05-26 19:40:10,669 - INFO - client: client_reader - Получено сообщение с сервера: {'response': 400, 'error': 'Не верный запрос'} 
+2021-05-26 19:40:10,669 - ERROR - client: client_reader - Reader: Сервер разорвал соединение или получен некорректный ответ! 
+2021-05-26 19:40:59,517 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:40:59,522 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:40:59,527 - INFO - decorators: deco_log_call - Wed May 26 19:40:59 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции main() 
+2021-05-26 19:40:59,527 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.40.59', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:40:59,527 - INFO - client: start_client - жду ответа 
+2021-05-26 19:40:59,534 - INFO - client: start_client - Ответ: 
+2021-05-26 19:40:59,536 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 19:41:13,074 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': '2021-05-26-19.41.13', 'to': '#all', 'from': 'Guest', 'message': 'уеркр'} 
+2021-05-26 19:41:13,229 - INFO - client: client_reader - Получено сообщение с сервера: {'response': 400, 'error': 'Не верный запрос'} 
+2021-05-26 19:41:13,229 - ERROR - client: client_reader - Reader: Сервер разорвал соединение или получен некорректный ответ! 
+2021-05-26 19:41:16,812 - INFO - decorators: deco_log_call - Wed May 26 19:41:16 2021 Вызван декоратор Log для start_client с параметрами ('Guest', 'f') из функции main() 
+2021-05-26 19:41:40,846 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:41:40,854 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:41:40,855 - INFO - decorators: deco_log_call - Wed May 26 19:41:40 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции mode) 
+2021-05-26 19:41:40,856 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.41.40', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:41:40,858 - INFO - client: start_client - жду ответа 
+2021-05-26 19:41:59,204 - INFO - client: start_client - Ответ: 
+2021-05-26 19:41:59,204 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 19:44:08,554 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:44:08,560 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:44:08,569 - INFO - decorators: deco_log_call - Wed May 26 19:44:08 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции main() 
+2021-05-26 19:44:08,569 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.44.08', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:44:08,570 - INFO - client: start_client - жду ответа 
+2021-05-26 19:44:26,313 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:44:26,321 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:44:26,337 - INFO - decorators: deco_log_call - Wed May 26 19:44:26 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции main() 
+2021-05-26 19:44:26,338 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.44.26', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:44:26,338 - INFO - client: start_client - жду ответа 
+2021-05-26 19:44:53,434 - INFO - client: start_client - Запуск клиента 
+2021-05-26 19:44:53,439 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 19:44:53,446 - INFO - decorators: deco_log_call - Wed May 26 19:44:53 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции main() 
+2021-05-26 19:44:53,447 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-19.44.53', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 19:44:53,447 - INFO - client: start_client - жду ответа 
+2021-05-26 19:45:45,731 - INFO - client: start_client - Ответ: 
+2021-05-26 19:45:45,732 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 19:45:51,552 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': '2021-05-26-19.45.51', 'to': '#all', 'from': 'Guest', 'message': 'Привет'} 
+2021-05-26 19:57:05,579 - ERROR - client: client_reader - Reader: Сервер разорвал соединение или получен некорректный ответ! 
+2021-05-26 20:00:06,054 - INFO - client: start_client - Запуск клиента 
+2021-05-26 20:00:06,060 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 20:00:06,064 - INFO - decorators: deco_log_call - Wed May 26 20:00:06 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции main() 
+2021-05-26 20:00:06,064 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-20.00.06', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 20:00:06,065 - INFO - client: start_client - жду ответа 
+2021-05-26 20:00:06,070 - INFO - client: start_client - Ответ: 
+2021-05-26 20:00:06,072 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 20:01:08,425 - INFO - client: start_client - Запуск клиента 
+2021-05-26 20:01:08,431 - INFO - client: create_presence_message - Формирование сообщения 
+2021-05-26 20:01:08,436 - INFO - decorators: deco_log_call - Wed May 26 20:01:08 2021 Вызван декоратор Log для create_presence_message с параметрами ('Guest',) из функции main() 
+2021-05-26 20:01:08,436 - INFO - client: start_client - Отправляю сообщение "{'action': 'presence', 'time': '2021-05-26-20.01.08', 'user': {'account_name': 'Guest'}}" на сервер 
+2021-05-26 20:01:08,437 - INFO - client: start_client - жду ответа 
+2021-05-26 20:01:08,444 - INFO - client: start_client - Ответ: 
+2021-05-26 20:01:08,445 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-05-26 20:01:11,475 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': '2021-05-26-20.01.11', 'to': '#all', 'from': 'Guest', 'message': 'Ghbdtn'} 
+2021-05-26 20:01:11,525 - INFO - client: client_reader - Получено сообщение с сервера: {'action': 'msg', 'time': '2021-05-26-20.01.11', 'to': '#all', 'from': 'Guest', 'message': 'Guest:> Ghbdtn'} 
+2021-05-26 20:01:19,396 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': '2021-05-26-20.01.19', 'to': '#all', 'from': 'Guest', 'message': 'rfr'} 
+2021-05-26 20:01:19,454 - INFO - client: client_reader - Получено сообщение с сервера: {'action': 'msg', 'time': '2021-05-26-20.01.19', 'to': '#all', 'from': 'Guest', 'message': 'Guest:> rfr'} 
+2021-05-26 20:01:23,083 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': '2021-05-26-20.01.23', 'to': '#all', 'from': 'Guest', 'message': 'Как дела?'} 
+2021-05-26 20:01:23,094 - INFO - client: client_reader - Получено сообщение с сервера: {'action': 'msg', 'time': '2021-05-26-20.01.23', 'to': '#all', 'from': 'Guest', 'message': 'Guest:> Как дела?'} 
+2021-05-26 20:01:27,576 - ERROR - client: client_reader - Reader: Сервер разорвал соединение или получен некорректный ответ! 

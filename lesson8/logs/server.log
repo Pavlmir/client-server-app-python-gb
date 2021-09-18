@@ -1,0 +1,112 @@
+2021-05-26 19:30:09,628 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-26 19:30:13,725 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.30.13', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:30:13,725 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:30:13,725 - INFO - decorators: deco_log_call - Wed May 26 19:30:13 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-19.30.13', 'user': {'account_name': 'Guest'}},) из функции start_server() 
+2021-05-26 19:30:13,726 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 19:30:13,726 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:30:14,238 - INFO - server: start_server - Клиент Guest отключился от сервера. 
+2021-05-26 19:31:22,464 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.31.21', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:31:22,464 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:31:22,465 - INFO - decorators: deco_log_call - Wed May 26 19:31:22 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-19.31.21', 'user': {'account_name': 'Guest'}},) из функции start_server() 
+2021-05-26 19:31:22,465 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 19:31:22,465 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:31:22,974 - INFO - server: start_server - Клиент Guest отключился от сервера. 
+2021-05-26 19:33:34,978 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.33.34', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:33:34,978 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:33:34,979 - INFO - decorators: deco_log_call - Wed May 26 19:33:34 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-19.33.34', 'user': {'account_name': 'Guest'}},) из функции start_server() 
+2021-05-26 19:33:34,979 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 19:33:34,979 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:33:45,111 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'msg', 'time': 1622046824.6177766, 'to': '#all', 'from': 'Guest', 'message': 'привет'} 
+2021-05-26 19:33:45,111 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:33:45,112 - INFO - decorators: deco_log_call - Wed May 26 19:33:45 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'msg', 'time': 1622046824.6177766, 'to': '#all', 'from': 'Guest', 'message': 'привет'},) из функции start_server() 
+2021-05-26 19:34:42,225 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-26 19:34:45,446 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.34.45', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:34:45,446 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:34:45,446 - INFO - decorators: deco_log_call - Wed May 26 19:34:45 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-19.34.45', 'user': {'account_name': 'Guest'}},) из функции start_server() 
+2021-05-26 19:34:45,447 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 19:34:45,447 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:34:48,992 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'msg', 'time': 1622046888.9336717, 'to': '#all', 'from': 'Guest', 'message': 'Привет'} 
+2021-05-26 19:34:48,992 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:34:48,993 - INFO - decorators: deco_log_call - Wed May 26 19:34:48 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'msg', 'time': 1622046888.9336717, 'to': '#all', 'from': 'Guest', 'message': 'Привет'},) из функции start_server() 
+2021-05-26 19:34:48,993 - INFO - server: start_server - Клиент отключился от сервера. 
+2021-05-26 19:34:48,993 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:37:39,776 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-26 19:37:45,203 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.37.45', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:37:45,203 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:37:45,203 - INFO - decorators: deco_log_call - Wed May 26 19:37:45 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-19.37.45', 'user': {'account_name': 'Guest'}},) из функции start_server() 
+2021-05-26 19:37:45,203 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 19:37:45,203 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:37:49,757 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'msg', 'time': '2021-05-26-19.37.49', 'to': '#all', 'from': 'Guest', 'message': 'Привет'} 
+2021-05-26 19:37:49,757 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:37:49,757 - INFO - decorators: deco_log_call - Wed May 26 19:37:49 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'msg', 'time': '2021-05-26-19.37.49', 'to': '#all', 'from': 'Guest', 'message': 'Привет'},) из функции start_server() 
+2021-05-26 19:37:49,758 - INFO - server: start_server - Клиент отключился от сервера. 
+2021-05-26 19:37:49,758 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:40:03,514 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-26 19:40:08,145 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.40.08', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:40:08,145 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:40:08,146 - INFO - decorators: deco_log_call - Wed May 26 19:40:08 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-19.40.08', 'user': {'account_name': 'Guest'}},) из функции start_server() 
+2021-05-26 19:40:08,146 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 19:40:08,147 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:40:10,668 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'msg', 'time': '2021-05-26-19.40.10', 'to': '#all', 'from': 'Guest', 'message': 'лорнмидом'} 
+2021-05-26 19:40:10,668 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:40:10,668 - INFO - decorators: deco_log_call - Wed May 26 19:40:10 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'msg', 'time': '2021-05-26-19.40.10', 'to': '#all', 'from': 'Guest', 'message': 'лорнмидом'},) из функции start_server() 
+2021-05-26 19:40:10,669 - INFO - server: start_server - Клиент отключился от сервера. 
+2021-05-26 19:40:10,669 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:40:57,807 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-26 19:40:59,531 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.40.59', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:40:59,531 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:40:59,533 - INFO - decorators: deco_log_call - Wed May 26 19:40:59 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-19.40.59', 'user': {'account_name': 'Guest'}},) из функции main() 
+2021-05-26 19:40:59,534 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 19:40:59,534 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:41:13,226 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'msg', 'time': '2021-05-26-19.41.13', 'to': '#all', 'from': 'Guest', 'message': 'уеркр'} 
+2021-05-26 19:41:13,227 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:41:13,228 - INFO - decorators: deco_log_call - Wed May 26 19:41:13 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'msg', 'time': '2021-05-26-19.41.13', 'to': '#all', 'from': 'Guest', 'message': 'уеркр'},) из функции main() 
+2021-05-26 19:41:13,228 - INFO - server: start_server - Клиент отключился от сервера. 
+2021-05-26 19:41:13,229 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:41:40,857 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.41.40', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:41:40,858 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:41:59,202 - INFO - decorators: deco_log_call - Wed May 26 19:41:53 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-19.41.40', 'user': {'account_name': 'Guest'}},) из функции main() 
+2021-05-26 19:41:59,202 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 19:41:59,203 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:44:07,506 - INFO - server: start_server - Клиент отключился от сервера. 
+2021-05-26 19:44:09,067 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.44.08', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:44:18,719 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-26 19:44:26,847 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.44.26', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:44:48,354 - INFO - server: start_server - Готов к приему клиентов! 
+ 
+2021-05-26 19:44:53,450 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-19.44.53', 'user': {'account_name': 'Guest'}} 
+2021-05-26 19:45:43,651 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:45:45,728 - INFO - decorators: deco_log_call - Wed May 26 19:45:45 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-19.44.53', 'user': {'account_name': 'Guest'}},) из функции main() 
+2021-05-26 19:45:45,729 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 19:45:45,729 - INFO - server: start_server - Отправка ответа клиенту: 
+2021-05-26 19:45:51,810 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'msg', 'time': '2021-05-26-19.45.51', 'to': '#all', 'from': 'Guest', 'message': 'Привет'} 
+2021-05-26 19:45:55,343 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 19:57:06,886 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-05-26 19:58:38,070 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-05-26 19:59:58,703 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-05-26 20:00:06,065 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-20.00.06', 'user': {'account_name': 'Guest'}} 
+2021-05-26 20:00:06,065 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 20:00:06,069 - INFO - decorators: deco_log_call - Wed May 26 20:00:06 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-20.00.06', 'user': {'account_name': 'Guest'}},) из функции main() 
+2021-05-26 20:00:06,069 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 20:00:06,070 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-05-26 20:00:06,070 - INFO - server: start_server - Получен запрос на соединение от ('127.0.0.1', 52540) 
+2021-05-26 20:01:03,932 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-05-26 20:01:08,437 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-05-26-20.01.08', 'user': {'account_name': 'Guest'}} 
+2021-05-26 20:01:08,437 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-05-26 20:01:08,443 - INFO - decorators: deco_log_call - Wed May 26 20:01:08 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-05-26-20.01.08', 'user': {'account_name': 'Guest'}},) из функции main() 
+2021-05-26 20:01:08,443 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-05-26 20:01:08,443 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-05-26 20:01:08,444 - INFO - server: start_server - Получен запрос на соединение от ('127.0.0.1', 52553) 
+2021-05-26 20:01:11,524 - INFO - server: read_messages - Принято сообщение от клиента: Guest 
+2021-05-26 20:01:19,454 - INFO - server: read_messages - Принято сообщение от клиента: Guest 
+2021-05-26 20:01:23,093 - INFO - server: read_messages - Принято сообщение от клиента: Guest 
